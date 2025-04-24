@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+footer {
+    background-color: #212529;
+    color: white;
+}
+
+.item-card {
+    transition: all 0.2s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.modal-body img {
+    max-height: 400px;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .modal-body .row {
+        flex-direction: column;
+    }
+    
+    .modal-body .col-md-6 {
+        width: 100%;
+    }
+}
